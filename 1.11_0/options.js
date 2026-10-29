@@ -59,7 +59,7 @@ const saveOptions = () => {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 const restoreOptions = () => {
-  getFromStorage('orientation', 'horizontal').then(function(result) {
+  getFromStorage('orientation', 'previous').then(function(result) {
     document.getElementById('orientation').value = result;
   })
 };
